@@ -1,0 +1,31 @@
+{
+  "name": "react-webpack-server-side-example",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --json > server/build.generated.json && webpack --config webpack.server-rendering.config.js && node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/webpack/react-webpack-server-side-example.git"
+  },
+  "author": "Tobias Koppers @sokra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webpack/react-webpack-server-side-example/issues"
+  },
+  "homepage": "https://github.com/webpack/react-webpack-server-side-example",
+  "dependencies": {
+    "style-loader": "~0.6.3",
+    "url-loader": "~0.5.5",
+    "file-loader": "~0.5.1",
+    "envify": "~1.2.1",
+    "react": "~0.10.0",
+    "css-loader": "~0.6.12",
+    "webpack": "~1.2.0-beta2",
+    "jsx-loader": "~0.10.2",
+    "express": "~4.3.0",
+    "json-loader": "~0.5.1"
+  }
+}
