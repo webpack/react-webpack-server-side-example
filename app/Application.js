@@ -2,7 +2,7 @@
 
 var React = require("react");
 
-var HelloWorld = React.createClass({
+var Application = React.createClass({
 	render: function() {
 		require("./Application.css");
 		return (
@@ -16,4 +16,4 @@ var HelloWorld = React.createClass({
 	}
 });
 
-module.exports = HelloWorld;
+module.exports = Application;

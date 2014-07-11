@@ -4,11 +4,9 @@ var React = require("react");
 
 var Application = require("../app/Application");
 
-var hash = require("./build.generated.json").hash;
-
 var styleCollector = require("./style-collector");
 
-module.exports = function(req) {
+module.exports = function(req, scriptFilename) {
 
 	var html;
 	var css = styleCollector.collect(function() {
@@ -21,7 +19,7 @@ module.exports = function(req) {
 			</head>
 			<body>
 				<div id="content" dangerouslySetInnerHTML={{__html: html}} />
-				<script src={"assets/" + hash + ".js"}></script>
+				<script src={"assets/" + scriptFilename}></script>
 			</body>
 		</html>
 	);

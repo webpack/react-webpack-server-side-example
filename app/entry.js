@@ -1,10 +1,10 @@
 /** @jsx React.DOM */
 
 var React = require("react");
-var HelloWorld = require("./HelloWorld");
+var Application = require("./Application");
 
 React.renderComponent(
-	<HelloWorld url={location.pathname + (location.search || "")} />,
+	<Application url={location.pathname + (location.search || "")} />,
 	document.getElementById("content")
 );
 

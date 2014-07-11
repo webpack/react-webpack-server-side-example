@@ -6,7 +6,7 @@ This is not for the normal user. This example is meant as inspiration to develop
 
 ## Overview
 
-There are two webpack compile passes. One for the browser bundle and one for the react application for server-side rendering. The server-side bundle can be required in other node.js code to build the pre-rendered HTML.
+webpack compile with two separate configurations: One for the browser bundle and one for the react application for server-side rendering. The server-side bundle can be required in other node.js code to build the pre-rendered HTML.
 
 ## Features
 
@@ -25,9 +25,8 @@ npm start
 
 Run the 3 steps:
 
-1. Compile the browser bundle and store the resulting stats.
-2. Compile the server-side bundle. This uses the stats of the browser bundle to write the correct script tag to the browser bundle url.
-3. Starts a server. The server requires the server-side bundle, which generates HTML for every request.
+1. Compile the browser bundle and the server-side bundle. It also stores stats from the browser bundle as json file.
+2. Starts a server. The server requires the server-side bundle, which generates HTML for every request. It also reads the filename of the browser bundle to insert the `<script>`-tag.
 
 ## License
 
