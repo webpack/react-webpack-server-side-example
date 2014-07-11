@@ -28,6 +28,14 @@ Run the 2 steps:
 1. Compile the browser bundle and the server-side bundle. It also stores stats from the browser bundle as json file.
 2. Starts a server. The server requires the server-side bundle, which generates HTML for every request. It also reads the filename of the browser bundle to insert the `<script>`-tag.
 
+### Production
+
+``` text
+npm run production
+```
+
+This compiles production versions for the browser and server-side bundles. It also minimizes javascript and css.
+
 ## License
 
 None. Don't copy the code, only use the idea.

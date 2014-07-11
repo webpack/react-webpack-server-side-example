@@ -11,6 +11,7 @@ var publicPath = "assets/";
 module.exports = [
 	{
 		// The configuration for the client
+		name: "browser",
 		entry: "./app/entry.js",
 		output: {
 			path: assetsPath,
@@ -32,6 +33,7 @@ module.exports = [
 	},
 	{
 		// The configuration for the server-side rendering
+		name: "server-side rendering",
 		entry: "./server/page.js",
 		target: "node",
 		output: {
