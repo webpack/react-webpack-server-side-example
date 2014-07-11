@@ -23,7 +23,7 @@ webpack compile with two separate configurations: One for the browser bundle and
 npm start
 ```
 
-Run the 3 steps:
+Run the 2 steps:
 
 1. Compile the browser bundle and the server-side bundle. It also stores stats from the browser bundle as json file.
 2. Starts a server. The server requires the server-side bundle, which generates HTML for every request. It also reads the filename of the browser bundle to insert the `<script>`-tag.
