@@ -14,7 +14,7 @@ webpack compile with two separate configurations: One for the browser bundle and
 * In both cases the code is compiled with webpack
   * Supports loaders i. e. file-loader for assets
 * The server-side compilation collects styles and include them in the pre-rendered HTML
-  * This avoids FOUC of the pre-rendered HTML
+  * This avoids [FOUC](https://en.wikipedia.org/wiki/Flash_of_unstyled_content) of the pre-rendered HTML
 * browser build includes a hash in url for caching
 
 ## Usage
